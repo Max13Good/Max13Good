@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,26 +13,48 @@
         <p class="mb-6 text-center">Имя студента: <strong>{{ student_name }}</strong></p>
 
         <div class="mb-4">
+
             <h2 class="text-xl font-semibold mb-2">Ближайшее занятие</h2>
             <p>Предмет: {{ lesson.subject }}</p>
             <p>Преподаватель: {{ lesson.teacher }}</p>
             <p>Дата и время: {{ lesson.datetime }}</p>
+
+        </section>
+        <section class="bg-white rounded shadow p-4">
+            <h2 class="text-xl font-semibold mb-2">Домашнее задание</h2>
+            <ul class="list-disc pl-5 space-y-1">
+=======
         </div>
 
         <div class="mb-4">
             <h2 class="text-xl font-semibold mb-2">Домашнее задание</h2>
             <ul class="list-disc pl-5">
+
                 {% for item in homework %}
                 <li>{{ item }}</li>
                 {% endfor %}
             </ul>
+
+        </section>
+        <section class="bg-white rounded shadow p-4">
+=======
         </div>
 
         <div class="mb-4">
+
             <h2 class="text-xl font-semibold mb-2">Платежная информация</h2>
             <p>Последний платёж: {{ payment.last_payment }}</p>
             <p>Оплачено до: {{ payment.paid_until }}</p>
             <p>Статус: {{ payment.status }} ✅</p>
+
+        </section>
+        <div class="flex space-x-4">
+            <a href="#" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition">📎 Скачать договор (PDF)</a>
+            <a href="mailto:manager@example.com" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">📩 Связаться с менеджером</a>
+        </div>
+    </div>
+{% endblock %}
+=======
         </div>
 
         <div class="flex space-x-4">
@@ -41,3 +64,4 @@
     </div>
 </body>
 </html>
+

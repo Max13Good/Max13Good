@@ -5,6 +5,7 @@ def student_dashboard(request):
     """Render demo student dashboard with static data."""
     context = {
         "student_name": "Иван Иванов",
+
         "lesson": {
             "subject": "Английский язык",
             "teacher": "Елена Смирнова",
