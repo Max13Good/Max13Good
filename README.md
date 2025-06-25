@@ -11,7 +11,7 @@ You can click the Preview link to take a look at your changes.
 
 ## Demo Student Dashboard
 
-
+**The interface features a sidebar menu, top navigation bar and responsive layout built with TailwindCSS and interactive elements powered by Alpine.js.**
 
 ### Quick start
 

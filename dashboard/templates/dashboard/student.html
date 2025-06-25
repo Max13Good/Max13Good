@@ -1,16 +1,36 @@
+<div x-data="{ contactModal: false }" class="space-y-6">
+    <section class="bg-white rounded-xl shadow-lg p-6 flex space-x-4 transform transition hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.944 12.083 12.083 0 015.84 10.578L12 14z" /></svg>
+        <div>
+            <h2 class="text-lg font-semibold mb-1">Ближайшее занятие</h2>
+        </div>
+    </section>
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет UKSkype</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 py-8">
-    <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
-        <h1 class="text-2xl font-bold mb-4 text-center">Личный кабинет UKSkype</h1>
-        <p class="mb-6 text-center">Имя студента: <strong>{{ student_name }}</strong></p>
+    <section class="bg-white rounded-xl shadow-lg p-6 flex space-x-4 transform transition hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <div>
+            <h2 class="text-lg font-semibold mb-1">Домашнее задание</h2>
+        </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-lg p-6 flex space-x-4 transform transition hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 11V7a4 4 0 118 0v4m-9 4v2a4 4 0 008 0v-2m4-4h.01M6 7h.01M6 11h.01M6 15h.01M6 19h.01" /></svg>
+        <div>
+            <h2 class="text-lg font-semibold mb-1">Платежная информация</h2>
+        </div>
+    </section>
+
+    <div class="flex space-x-4">
+        <a href="#" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded transition">📎 Скачать договор (PDF)</a>
+        <button @click="contactModal = true" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded transition">💬 Связаться с менеджером</button>
+    </div>
+
+    <div x-show="contactModal" x-cloak class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white rounded-lg p-6 w-80">
+            <h3 class="text-lg font-semibold mb-4">Связаться с менеджером</h3>
+            <p class="mb-4">Напишите на <a href="mailto:manager@example.com" class="text-blue-600 underline">manager@example.com</a></p>
+            <button @click="contactModal = false" class="px-4 py-2 bg-blue-500 text-white rounded">Закрыть</button>
+</div>
 
         <div class="mb-4">
 
