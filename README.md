@@ -8,3 +8,20 @@
 Max13Good/Max13Good is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
+## Demo Student Dashboard
+
+This repository contains a simple Django project used to demonstrate a student's personal account page. All demo data is hardcoded inside the Django view, so a database is not required. TailwindCSS is loaded via CDN.
+
+The interface features a sidebar menu, top navigation bar and responsive layout built entirely with TailwindCSS.
+
+### Quick start
+
+```bash
+pip install django==4.2
+python manage.py migrate
+python manage.py runserver
+```
+
+Then open `http://localhost:8000/student/` in your browser.
+
