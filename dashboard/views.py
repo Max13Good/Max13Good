@@ -22,4 +22,3 @@ def student_dashboard(request):
         },
     }
     return render(request, "dashboard/student.html", context)
-

@@ -11,7 +11,7 @@ You can click the Preview link to take a look at your changes.
 
 ## Demo Student Dashboard
 
-This repository contains a simple Django project used to demonstrate a student's personal account page. All demo data is hardcoded inside the Django view, so a database is not required. TailwindCSS is loaded via CDN.
+This repository contains a simple Django project used to demonstrate a student's personal account page. All demo data is stored directly in the Django view, so a database is not required. TailwindCSS is used via CDN.
 
 The interface features a sidebar menu, top navigation bar and responsive layout built entirely with TailwindCSS.
 
@@ -24,4 +24,3 @@ python manage.py runserver
 ```
 
 Then open `http://localhost:8000/student/` in your browser.
-
