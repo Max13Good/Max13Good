@@ -6,6 +6,8 @@ def student_dashboard(request):
     context = {
         "student_name": "Иван Иванов",
 
+        "student_avatar_url": "https://via.placeholder.com/32",
+
         "lesson": {
             "subject": "Английский язык",
             "teacher": "Елена Смирнова",
@@ -22,4 +24,3 @@ def student_dashboard(request):
         },
     }
     return render(request, "dashboard/student.html", context)
-
